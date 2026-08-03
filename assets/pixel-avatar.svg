@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224 224" width="224" height="224" shape-rendering="crispEdges">
+  <defs>
+    <filter id="glow-red">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-subtle">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="224" height="224" fill="#050505"/>
+
+  <!-- Outer border glow -->
+  <rect x="2" y="2" width="220" height="220" fill="none" stroke="#FF2B2B" stroke-width="1" opacity="0.3"/>
+  <rect x="4" y="4" width="216" height="216" fill="none" stroke="#FF2B2B" stroke-width="1" opacity="0.6"/>
+  <rect x="6" y="6" width="212" height="212" fill="none" stroke="#B91C1C" stroke-width="1"/>
+
+  <!-- Corner brackets -->
+  <rect x="6" y="6" width="20" height="4" fill="#FF2B2B"/>
+  <rect x="6" y="6" width="4" height="20" fill="#FF2B2B"/>
+  <rect x="198" y="6" width="20" height="4" fill="#FF2B2B"/>
+  <rect x="214" y="6" width="4" height="20" fill="#FF2B2B"/>
+  <rect x="6" y="214" width="20" height="4" fill="#FF2B2B"/>
+  <rect x="6" y="198" width="4" height="20" fill="#FF2B2B"/>
+  <rect x="198" y="214" width="20" height="4" fill="#FF2B2B"/>
+  <rect x="214" y="198" width="4" height="20" fill="#FF2B2B"/>
+
+  <!-- ===== PIXEL ART CHARACTER ===== -->
+  <!-- Each "pixel" is 7x7, grid starts at x=28, y=14 -->
+  <!-- Grid is 24 cols x 28 rows = 168x196 -->
+
+  <!-- ROW 0-1: empty -->
+  
+  <!-- ROW 2-3: Hood top -->
+  <rect x="70" y="28" width="84" height="7" fill="#1a1a1a"/>
+  <rect x="63" y="35" width="98" height="7" fill="#1a1a1a"/>
+
+  <!-- ROW 4: Hood mid-top -->
+  <rect x="56" y="42" width="7" height="7" fill="#1a1a1a"/>
+  <rect x="63" y="42" width="98" height="7" fill="#222222"/>
+  <rect x="161" y="42" width="7" height="7" fill="#1a1a1a"/>
+
+  <!-- ROW 5: Hood with face area starting -->
+  <rect x="49" y="49" width="7" height="7" fill="#1a1a1a"/>
+  <rect x="56" y="49" width="112" height="7" fill="#2a2a2a"/>
+  <rect x="168" y="49" width="7" height="7" fill="#1a1a1a"/>
+
+  <!-- ROW 6: Face top -->
+  <rect x="49" y="56" width="7" height="7" fill="#1a1a1a"/>
+  <rect x="56" y="56" width="7" height="7" fill="#2a2a2a"/>
+  <rect x="63" y="56" width="98" height="7" fill="#2d2d2d"/>
+  <rect x="161" y="56" width="7" height="7" fill="#2a2a2a"/>
+  <rect x="168" y="56" width="7" height="7" fill="#1a1a1a"/>
+
+  <!-- ROW 7: Eyes row -->
+  <rect x="49" y="63" width="7" height="7" fill="#111111"/>
+  <rect x="56" y="63" width="7" height="7" fill="#2a2a2a"/>
+  <rect x="63" y="63" width="28" height="7" fill="#2d2d2d"/>
+  <!-- Left eye -->
+  <rect x="84" y="63" width="21" height="7" fill="#FF2B2B" filter="url(#glow-red)"/>
+  <rect x="84" y="63" width="21" height="7" fill="#FF2B2B"/>
+  <rect x="91" y="63" width="7" height="7" fill="#ff6060"/>
+  <rect x="105" y="63" width="14" height="7" fill="#2d2d2d"/>
+  <!-- Right eye -->
+  <rect x="119" y="63" width="21" height="7" fill="#FF2B2B" filter="url(#glow-red)"/>
+  <rect x="119" y="63" width="21" height="7" fill="#FF2B2B"/>
+  <rect x="126" y="63" width="7" height="7" fill="#ff6060"/>
+  <rect x="140" y="63" width="21" height="7" fill="#2d2d2d"/>
+  <rect x="161" y="63" width="7" height="7" fill="#2a2a2a"/>
+  <rect x="168" y="63" width="7" height="7" fill="#111111"/>
+
+  <!-- ROW 8: Below eyes -->
+  <rect x="49" y="70" width="7" height="7" fill="#111111"/>
+  <rect x="56" y="70" width="112" height="7" fill="#2d2d2d"/>
+  <rect x="168" y="70" width="7" height="7" fill="#111111"/>
+
+  <!-- ROW 9: Mask/face area - nose line -->
+  <rect x="49" y="77" width="7" height="7" fill="#111111"/>
+  <rect x="56" y="77" width="7" height="7" fill="#1a1a1a"/>
+  <rect x="63" y="77" width="98" height="7" fill="#2a2a2a"/>
+  <rect x="161" y="77" width="7" height="7" fill="#1a1a1a"/>
+  <rect x="168" y="77" width="7" height="7" fill="#111111"/>
+
+  <!-- ROW 10: Mouth area - subtle line -->
+  <rect x="49" y="84" width="7" height="7" fill="#111111"/>
+  <rect x="56" y="84" width="7" height="7" fill="#1a1a1a"/>
+  <rect x="63" y="84" width="35" height="7" fill="#2a2a2a"/>
+  <rect x="98" y="84" width="28" height="7" fill="#333333"/>
+  <rect x="126" y="84" width="35" height="7" fill="#2a2a2a"/>
+  <rect x="161" y="84" width="7" height="7" fill="#1a1a1a"/>
+  <rect x="168" y="84" width="7" height="7" fill="#111111"/>
+
+  <!-- ROW 11: Chin area -->
+  <rect x="49" y="91" width="7" height="7" fill="#111111"/>
+  <rect x="56" y="91" width="7" height="7" fill="#1a1a1a"/>
+  <rect x="63" y="91" width="98" height="7" fill="#1e1e1e"/>
+  <rect x="161" y="91" width="7" height="7" fill="#1a1a1a"/>
+  <rect x="168" y="91" width="7" height="7" fill="#111111"/>
+
+  <!-- ROW 12: Neck/collar -->
+  <rect x="56" y="98" width="7" height="7" fill="#111111"/>
+  <rect x="63" y="98" width="28" height="7" fill="#1a1a1a"/>
+  <rect x="91" y="98" width="42" height="7" fill="#0a0a0a"/>
+  <rect x="133" y="98" width="28" height="7" fill="#1a1a1a"/>
+  <rect x="161" y="98" width="7" height="7" fill="#111111"/>
+
+  <!-- ROW 13: Collar / hoodie top -->
+  <rect x="49" y="105" width="7" height="7" fill="#111111"/>
+  <rect x="56" y="105" width="21" height="7" fill="#1a1a1a"/>
+  <rect x="77" y="105" width="70" height="7" fill="#0d0d0d"/>
+  <rect x="147" y="105" width="21" height="7" fill="#1a1a1a"/>
+  <rect x="168" y="105" width="7" height="7" fill="#111111"/>
+
+  <!-- ROW 14-15: Shoulders + chest -->
+  <rect x="35" y="112" width="7" height="7" fill="#111111"/>
+  <rect x="42" y="112" width="140" height="7" fill="#1a1a1a"/>
+  <rect x="182" y="112" width="7" height="7" fill="#111111"/>
+
+  <rect x="28" y="119" width="7" height="7" fill="#111111"/>
+  <rect x="35" y="119" width="154" height="7" fill="#222222"/>
+  <rect x="189" y="119" width="7" height="7" fill="#111111"/>
+
+  <!-- Red hoodie stripe accent -->
+  <rect x="35" y="126" width="154" height="4" fill="#B91C1C" opacity="0.8"/>
+
+  <!-- ROW 16-20: Torso/hoodie body -->
+  <rect x="28" y="130" width="168" height="7" fill="#1a1a1a"/>
+  <rect x="28" y="137" width="168" height="7" fill="#1e1e1e"/>
+  <rect x="28" y="144" width="168" height="7" fill="#1a1a1a"/>
+  <rect x="28" y="151" width="168" height="7" fill="#1e1e1e"/>
+  <rect x="28" y="158" width="168" height="7" fill="#1a1a1a"/>
+
+  <!-- Center chest terminal icon -->
+  <rect x="91" y="133" width="42" height="28" fill="#0d1117" stroke="#FF2B2B" stroke-width="1"/>
+  <rect x="94" y="137" width="7" height="4" fill="#FF2B2B"/>
+  <rect x="103" y="137" width="21" height="4" fill="#333"/>
+  <rect x="94" y="143" width="28" height="4" fill="#444"/>
+  <rect x="94" y="149" width="14" height="4" fill="#333"/>
+
+  <!-- ROW 21-22: Lower torso -->
+  <rect x="28" y="165" width="168" height="7" fill="#1a1a1a"/>
+  <rect x="28" y="172" width="168" height="7" fill="#1e1e1e"/>
+
+  <!-- ROW 23-24: Bottom edge -->
+  <rect x="35" y="179" width="154" height="7" fill="#1a1a1a"/>
+  <rect x="42" y="186" width="140" height="7" fill="#111111"/>
+  <rect x="56" y="193" width="112" height="7" fill="#0d0d0d"/>
+
+  <!-- Red accent bottom stripe -->
+  <rect x="28" y="200" width="168" height="3" fill="#FF2B2B" opacity="0.5"/>
+
+  <!-- Scanline overlay effect -->
+  <rect x="10" y="10" width="204" height="204" fill="url(#scanlines)" opacity="0.05"/>
+
+  <!-- Status indicator - bottom right -->
+  <rect x="175" y="192" width="8" height="8" fill="#22c55e" filter="url(#glow-subtle)"/>
+  <rect x="175" y="192" width="8" height="8" fill="#22c55e"/>
+
+  <!-- Corner decorations bottom -->
+  <rect x="10" y="208" width="40" height="2" fill="#FF2B2B" opacity="0.4"/>
+  <rect x="174" y="208" width="40" height="2" fill="#FF2B2B" opacity="0.4"/>
+</svg>

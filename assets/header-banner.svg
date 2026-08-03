@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 120" width="900" height="120">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="120" fill="#050505"/>
+
+  <!-- Top border red line -->
+  <rect x="0" y="0" width="900" height="3" fill="#FF2B2B"/>
+
+  <!-- Bottom border -->
+  <rect x="0" y="117" width="900" height="3" fill="#FF2B2B" opacity="0.5"/>
+
+  <!-- Left bracket -->
+  <rect x="10" y="10" width="3" height="30" fill="#FF2B2B"/>
+  <rect x="10" y="10" width="20" height="3" fill="#FF2B2B"/>
+
+  <!-- Right bracket -->
+  <rect x="887" y="10" width="3" height="30" fill="#FF2B2B"/>
+  <rect x="867" y="10" width="20" height="3" fill="#FF2B2B"/>
+
+  <!-- Terminal prompt prefix -->
+  <text x="40" y="45" font-family="monospace" font-size="14" fill="#FF2B2B" filter="url(#glow)">▶</text>
+  <text x="58" y="45" font-family="monospace" font-size="13" fill="#A0A0A0">root@github:~$</text>
+  <text x="178" y="45" font-family="monospace" font-size="13" fill="#F5F5F5"> whoami</text>
+
+  <!-- Main name -->
+  <text x="40" y="85" font-family="monospace" font-size="32" font-weight="bold" fill="#FF2B2B" filter="url(#glow)" letter-spacing="4">AHMED TAHLEESH</text>
+
+  <!-- Subtitle -->
+  <text x="40" y="107" font-family="monospace" font-size="12" fill="#A0A0A0" letter-spacing="2">BACKEND DEVELOPER  ·  NODE.JS  ·  EXPRESS.JS  ·  MONGODB</text>
+
+  <!-- Blinking cursor -->
+  <rect x="680" y="32" width="10" height="16" fill="#FF2B2B" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0;0.9" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Decorative dots right side -->
+  <circle cx="830" cy="60" r="3" fill="#FF2B2B" opacity="0.6"/>
+  <circle cx="845" cy="60" r="3" fill="#FF2B2B" opacity="0.4"/>
+  <circle cx="860" cy="60" r="3" fill="#FF2B2B" opacity="0.2"/>
+</svg>
